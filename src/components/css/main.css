@@ -1,0 +1,219 @@
+.Main {
+  width: 100%;
+}
+
+.section1 {
+  max-width: 100%;
+  height: 700px;
+  padding: 0 70px;
+}
+
+.sec1h3 {
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 37px;
+  color: #ffffff;
+  padding-top: 70px;
+}
+
+.sec1List {
+  width: 100%;
+  height: 420px;
+  margin-top: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  overflow-y: hidden;
+  /* flex-wrap: wrap; */
+}
+
+.sec1ItemDiv {
+  width: 540px;
+
+}
+
+.sec1Item {
+  width: 260px;
+  height: 260px;
+}
+
+.sec1Item:hover {
+  width: 450px;
+  height: 415px;
+}
+
+.sec1Item:hover > img {
+  width: 100%;
+  height: 100%;
+}
+
+.sec1Item:hover .ItemListText {
+  display: block;
+}
+
+.sec1Item:hover .ItemList {
+  margin-top: -160px;
+}
+
+.sec1Item:hover .ItemListLink {
+  display: block;
+}
+
+.sec1Item:hover .ItemListAll {
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 0 0 40px 40px;
+  width: 100%;
+  height: 167px;
+  position: relative;
+}
+.ItemListText {
+  width: 100%;
+  height: 220px;
+  position: relative;
+  margin-top: -400px;
+  display: none;
+}
+
+.ListText1 {
+  width: 170px;
+  height: 66px;
+  background: rgba(0, 0, 0, 0.47);
+  border-radius: 13px;
+  margin-left: 0;
+  margin-top: 10px;
+}
+
+.ListText1 > h2 {
+  width: 100%;
+  height: 60%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ListText1 > h3 {
+  width: 100%;
+  height: 40%;
+  background: #ffffff;
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ItemList {
+  width: 130px;
+  height: 136px;
+  background: #d9d9d9;
+  border-radius: 18px 0px 0px 18px;
+  margin-right: 0;
+  position: relative;
+  margin-top: -170px;
+}
+.ItemListLink > p {
+  color: white;
+  padding: 32px 0 0 15px;
+}
+.WatchNowBtn {
+  width: 194px;
+  height: 48px;
+  background: #e13c52;
+  border-radius: 60px;
+  border: none;
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  color: #ffffff;
+  cursor: pointer;
+  margin: 20px;
+}
+.ItemListDiv1 {
+  width: 100%;
+  height: 65%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ItemListLink {
+  width: 300px;
+  display: none;
+  margin-left: 0;
+}
+
+/* .ItemListLink>p{
+    margin-left: 0;
+} */
+.ItemListH3 {
+  width: 100%;
+  height: 35%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #515151;
+  border-radius: 18px 0px 0px 18px;
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 41px;
+  text-align: center;
+
+  color: #ffffff;
+}
+.btnAddBanner {
+  width: 40%;
+  height: 90px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  border: 1px solid #848484;
+  font-size: 28px;
+  margin-top: 50px;
+  cursor: pointer;
+}
+
+/* section2 uchun cssss */
+.Section2 {
+  max-width: 100%;
+  height: 500px;
+  padding: 0 70px;
+}
+.Sec2Span {
+  width: 360px;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 0;
+}
+.Sec2Span > h3 {
+  margin-left: 0;
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 37px;
+  color: #ffffff;
+}
+.Sec2Span > a {
+  width: 100px;
+  display: flex;
+  align-items: center;
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-decoration-line: underline;
+  color: #ffffff;
+}
+.Sec2Div {
+  width: 100%;
+  height: 90%;
+}
