@@ -11,9 +11,10 @@ body{
 }
 .container{
   max-width: 1920px;
-  background-image: url("/public/images/bgBig.png");
+   background-image: url("/public/images/bgBig.png");
+   background-repeat: no-repeat;
 }
 
 ::-webkit-scrollbar {
-  width: 0.1px;
+  width: 0.001px;
 }

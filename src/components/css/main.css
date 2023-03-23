@@ -1,10 +1,11 @@
 .Main {
   width: 100%;
+   /* background-image: url("/public/images/bgBig.png"); */
 }
 
 .section1 {
   max-width: 100%;
-  height: 700px;
+  height: 575px;
   padding: 0 70px;
 }
 
@@ -21,7 +22,7 @@
 .sec1List {
   width: 100%;
   height: 420px;
-  margin-top: 25px;
+  margin-top: -50px;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -174,14 +175,15 @@
   text-align: center;
   border: 1px solid #848484;
   font-size: 28px;
-  margin-top: 50px;
+  /* margin-top: 50px; */
   cursor: pointer;
+  margin-left: 60%;
 }
 
 /* section2 uchun cssss */
 .Section2 {
   max-width: 100%;
-  height: 500px;
+  height: 405px;
   padding: 0 70px;
 }
 .Sec2Span {
@@ -216,4 +218,188 @@
 .Sec2Div {
   width: 100%;
   height: 90%;
+}
+
+
+
+/* Section3 uchun csssss */
+.Section3{
+  max-width: 100%;
+  height: 490px;
+  padding: 0 70px;
+}
+.Sec3Span{
+  width: 360px;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 0;
+}
+.Sec3Span > h3 {
+  margin-left: 0;
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 37px;
+  color: #ffffff;
+}
+.Sec3Span > a {
+  width: 100px;
+  display: flex;
+  align-items: center;
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-decoration-line: underline;
+  color: #ffffff;
+}
+.Sec3Div{
+  width: 100%;
+  height: 90%;
+}
+.Sec3List{
+  width: 100%;
+  height: 75%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow-y: hidden;
+}
+.Sec3Item{
+width: 231px;
+height: 348px;
+}
+
+.btnAddBanner2 {
+  width: 40%;
+  height: 90px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  border: 1px solid #848484;
+  font-size: 28px;
+  margin-top: 5px;
+  cursor: pointer;
+  margin-left: 60%;
+}
+
+/* Section4 uchun csss */
+.Section4{
+  max-width: 100%;
+  height: 490px;
+  padding: 0 70px;
+}
+.Sec4Span{
+  width: 360px;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 0;
+}
+.Sec4Span > h3 {
+  margin-left: 0;
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 37px;
+  color: #ffffff;
+}
+.Sec4Span > a {
+  width: 100px;
+  display: flex;
+  align-items: center;
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-decoration-line: underline;
+  color: #ffffff;
+}
+.Sec4Div{
+  width: 100%;
+  height: 90%;
+}
+.Sec4List{
+  width: 100%;
+  height: 75%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow-y: hidden;
+}
+.Sec4Item{
+width: 231px;
+height: 348px;
+}
+
+.btnAddBanner3 {
+  width: 40%;
+  height: 90px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  border: 1px solid #848484;
+  font-size: 28px;
+  margin-top: 15px;
+  cursor: pointer;
+  margin-left: 60%;
+}
+
+/* Section5 uchun csss */
+.Section5{
+  max-width: 100%;
+  height: 350px;
+  padding: 0 70px;
+}
+.Sec5Span{
+  width: 360px;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 0;
+}
+.Sec5Span > h3 {
+  margin-left: 0;
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 37px;
+  color: #ffffff;
+}
+.Sec5Span > a {
+  width: 100px;
+  display: flex;
+  align-items: center;
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-decoration-line: underline;
+  color: #ffffff;
+}
+.Sec5Div{
+  width: 100%;
+  height: 90%;
+}
+.Sec5List{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow-y: hidden;
+}
+.Sec5Item{
+width: 210px;
+height: 210px;
 }
