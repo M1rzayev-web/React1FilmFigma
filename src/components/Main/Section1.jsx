@@ -2,19 +2,19 @@ import React, { useState, useEffect } from "react";
 // import Section1Array from "../js/section1";
 
 function section1() {
-//   {
-//     const [data, setData] = useState([]);
+  // {
+  //   const [data, setData] = useState([]);
 
-//     useEffect(() => {
-//       const fetchData = async () => {
-//         const response = await fetch(Section1Array);
-//         const jsonData = await response.json();
-//         setData(jsonData);
-//       };
+  //   useEffect(() => {
+  //     const fetchData = async () => {
+  //       const response = await fetch(Section1Array);
+  //       const jsonData = await response.json();
+  //       setData(jsonData);
+  //     };
 
-//       fetchData();
-//     }, []);
-//   }
+  //     fetchData();
+  //   }, []);
+  // }
   return (
     <>
       <div className="section1">

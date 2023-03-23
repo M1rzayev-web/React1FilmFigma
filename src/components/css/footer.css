@@ -7,7 +7,6 @@
 .FooterLeftDiv{
     width: 40%;
     height: 100%;
-    border: 1px solid white;
     padding-left: 70px;
 }
 .LogoWhite{
@@ -93,9 +92,7 @@ margin-top: 95px;
 }
 .FooterLink>a>i:hover {
     border: 1px solid 
-#55ACE3;
-
-    color: 
+#55ACE3;    color: 
 #55ACE3;
 }
 
@@ -116,5 +113,33 @@ margin-left: 0;
 .FooterRightDiv{
     width: 60%;
     height: 100%;
-    border: 1px solid white;
+    display: flex;
+}
+.FooterRightDiv1{
+    width: 30%;
+    height: 100%;
+}
+.FooterRightDiv1>a{
+    width: 100px;
+    color: white;
+    font-size: 22px;
+    margin-left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 70px;
+}
+.FooterUlList3>li>a{
+    /* font-family: 'Ubuntu'; */
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+display: flex;
+line-height: 140%;
+color: #797979;
+margin: 10px;
+margin-top: 20px;
+}
+.FooterUlList3>li>a:hover{
+    color: white;
 }

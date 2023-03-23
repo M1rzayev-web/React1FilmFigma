@@ -13,6 +13,7 @@ body{
   max-width: 1920px;
    background-image: url("/public/images/bgBig.png");
    background-repeat: no-repeat;
+   
 }
 
 ::-webkit-scrollbar {
