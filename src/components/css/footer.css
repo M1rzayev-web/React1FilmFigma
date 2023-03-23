@@ -1,14 +1,118 @@
 .Footer{
-    width: 100%;
+    max-width: 100%;
     height: 591px;
     display: flex;
-    background-color: black;
+   background: #191919;
 }
 .FooterLeftDiv{
     width: 40%;
     height: 100%;
     border: 1px solid white;
+    padding-left: 70px;
 }
+.LogoWhite{
+    width: 100px;
+    margin-left: 0;
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+.FooterP1{
+width: 280px;
+height: 88px;
+font-family: 'Ubuntu';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 140%;
+color: #8D8D8D;
+margin-left: 0;
+margin-top: 95px;
+}
+.FooterBtn{
+    display: flex;
+    width: 300px;
+    margin-left: 0;
+}
+.FooterBtn1{
+    width: 130px;
+    height: 38px;
+    background: #000000;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgb(176, 171, 171);
+    border-radius: 5px;
+    margin-left: 0;
+    margin-top: 32px;
+    cursor: pointer;
+}
+.fa-apple{
+    color: white;
+    font-size: 25px;
+}
+.fa-google-play{
+    color: white;
+    font-size: 25px;
+}
+.appleP{
+    height: 50%;
+    color: white;
+    font-size: 12px;
+}
+.appleH4{
+    height: 50%;
+    color: white;
+    font-size: 17px;
+}
+.FooterLink{
+    max-width: 400px;
+    height: 50px;
+    margin-left: 0;
+    margin-top: 47px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.FooterLink>a>i{
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: 1px solid rgb(155, 150, 150);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 21px;
+}
+.FooterLinkA1{
+    margin-left: 0;
+}
+.FooterLink>a>i:hover {
+    border: 1px solid 
+#55ACE3;
+
+    color: 
+#55ACE3;
+}
+
+.FooterLinkAList{
+    width: 300px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+margin-top: 55px;
+margin-left: 0;
+}
+.FooterLinkAList>a{
+    color: #616161;
+}
+
+
+
 .FooterRightDiv{
     width: 60%;
     height: 100%;
