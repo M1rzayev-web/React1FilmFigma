@@ -168,8 +168,8 @@
   color: #ffffff;
 }
 .btnAddBanner {
-  width: 40%;
-  height: 90px;
+  width: 30%;
+  height: 10%;
   background-color: black;
   color: white;
   text-align: center;
@@ -177,7 +177,7 @@
   font-size: 28px;
   /* margin-top: 50px; */
   cursor: pointer;
-  margin-left: 60%;
+  margin-left: 70%;
 }
 
 /* section2 uchun cssss */
@@ -275,8 +275,8 @@ height: 348px;
 }
 
 .btnAddBanner2 {
-  width: 40%;
-  height: 90px;
+  width: 30%;
+  height: 10%;
   background-color: black;
   color: white;
   text-align: center;
@@ -284,7 +284,7 @@ height: 348px;
   font-size: 28px;
   margin-top: 5px;
   cursor: pointer;
-  margin-left: 60%;
+  margin-left: 70%;
 }
 
 /* Section4 uchun csss */
@@ -340,16 +340,16 @@ height: 348px;
 }
 
 .btnAddBanner3 {
-  width: 40%;
-  height: 90px;
+  width: 30%;
+  height: 10%;
   background-color: black;
   color: white;
   text-align: center;
   border: 1px solid #848484;
   font-size: 28px;
-  margin-top: 15px;
+  margin-top: 5px;
   cursor: pointer;
-  margin-left: 60%;
+  margin-left: 70%;
 }
 
 /* Section5 uchun csss */

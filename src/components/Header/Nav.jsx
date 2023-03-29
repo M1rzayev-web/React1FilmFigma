@@ -1,14 +1,18 @@
-import React from "react";
+import React, { useRef } from "react";
 
 function Nav() {
-    // const btnSearch = document.querySelector(".btnSearch");
-    // const SearchInput = document.querySelector(".SearchInput");
-    // btnSearch.addEventListener("click", function () {
-    //   Search();
-    // });
-    // function Search() {
-    //   SearchInput.style.display = "block";
-    // }
+  const searchInputRef = useRef(null);
+  const searchInputBtnXRef = useRef(null);
+  const search = useRef(null);
+  const handleSearchBtnXClick = () => {
+    searchInputRef.current.value = "";
+    searchInputRef.current.style.display = "none";
+    searchInputBtnXRef.current.style.display = "none";
+  };
+  const searchBtn = () => {
+    
+  }
+
   return (
     <>
       <nav className="Nav">
@@ -29,13 +33,31 @@ function Nav() {
             <a href="#">Music</a>
           </li>
         </ul>
-        <input className="SearchInput" type="text" placeholder="Search..." />
+        <input
+          id="searchInput"
+          className="SearchInput"
+          type="text"
+          placeholder="Search..."
+          ref={searchInputRef}
+        />
+        <button
+          id="searchInputBtnX"
+          className="SearchInputBtnX"
+          onClick={handleSearchBtnXClick}
+          ref={searchInputBtnXRef}
+        >
+          X
+        </button>
+        <div className="Saqlanganlar"></div>
         <ul className="NavSeLo">
           <button className="btnSearch btnNav">
-            <i class="fa-solid fa-magnifying-glass"></i>Search
+            <i className="fa-solid fa-magnifying-glass"></i>Search
+          </button>
+          <button className="btnBell">
+            <i className="fa-solid fa-bell"></i>
           </button>
           <button className="btnSig-in btnNav">
-            <i class="fa-solid fa-user"></i>Sig in
+            <i className="fa-solid fa-user"></i>Sig in
           </button>
         </ul>
       </nav>

@@ -20,6 +20,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-left: 0;
 }
 .NavItem>a{
     color: white;
@@ -37,7 +38,42 @@
     font-size: 20px;
     border: none;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
-    /* display: none; */
+    display: none;
+}
+.Saqlanganlr{
+    display: none;
+    position: fixed;
+    z-index: 2;
+    width: 500px;
+    height: 900px;
+    overflow-x: hidden;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    left: 70%;
+    top: 10%;
+}
+.btnBell{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.fa-bell{
+    font-size: 22px;
+    color: white;
+}
+.SearchInputBtnX{
+    width: 30px;
+    height: 30px;
+    font-size: 22px;
+border: 1px solid red;
+    color: red;
+    background-color: transparent;
+    display: none;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 0;
 }
 .NavSeLo{
     width: 20%;

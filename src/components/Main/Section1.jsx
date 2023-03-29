@@ -1,193 +1,49 @@
 import React, { useState, useEffect } from "react";
-// import Section1Array from "../js/section1";
+import { Malumot1 } from "../js/ArrayUchun";
 
-function section1() {
-  // {
-  //   const [data, setData] = useState([]);
+function Section1() {
+  const [data, setData] = useState([]);
 
-  //   useEffect(() => {
-  //     const fetchData = async () => {
-  //       const response = await fetch(Section1Array);
-  //       const jsonData = await response.json();
-  //       setData(jsonData);
-  //     };
+  useEffect(() => {
+    const fetchData = async () => {
+      setData(Malumot1);
+    };
 
-  //     fetchData();
-  //   }, []);
-  // }
+    fetchData();
+  }, []);
+
   return (
     <>
       <div className="section1">
         <h3 className="sec1h3">Recommended Channels</h3>
         <ul className="sec1List">
-          <li className="sec1Item">
-            <img src="/public/images/img1.png" alt="" />
-            <div className="ItemListText">
-              <div className="ListText1">
-                <h2>Showing Now</h2>
-                <h3>Monster Truck</h3>
-              </div>
-              <div className="ListText1">
-                <h2>Up Next</h2>
-                <h3>Emilly Watson</h3>
-              </div>
-            </div>
-            <div className="ItemListAll">
-              <div className="ItemListLink">
-                <p>
-                  Enjoy the best of action packed movies from NBC
-                  international...
-                </p>
-                <button className="WatchNowBtn">Watch Now</button>
-              </div>
-              <div className="ItemList">
-                <div className="ItemListDiv1">
-                  <img src="/public/images/FoxChanel.svg" alt="" />
+          {data.map((item) => (
+            <li className="sec1Item" key={item.FilmId}>
+              <img src={item.images} alt="" />
+              <div className="ItemListText">
+                <div className="ListText1">
+                  <h2>{item.Showing}</h2>
+                  <h3>{item.Monster}</h3>
                 </div>
-                <h3 className="ItemListH3">212</h3>
-              </div>
-            </div>
-          </li>
-          <li className="sec1Item">
-            <img src="/public/images/img2.png" alt="" />
-            <div className="ItemListText">
-              <div className="ListText1">
-                <h2>Showing Now</h2>
-                <h3>Monster Truck</h3>
-              </div>
-              <div className="ListText1">
-                <h2>Up Next</h2>
-                <h3>Emilly Watson</h3>
-              </div>
-            </div>
-            <div className="ItemListAll">
-              <div className="ItemListLink">
-                <p>
-                  Enjoy the best of action packed movies from NBC
-                  international...
-                </p>
-                <button className="WatchNowBtn">Watch Now</button>
-              </div>
-              <div className="ItemList">
-                <div className="ItemListDiv1">
-                  <img src="/public/images/abc.svg" alt="" />
+                <div className="ListText1">
+                  <h2>{item.Next}</h2>
+                  <h3>{item.Name}</h3>
                 </div>
-                <h3 className="ItemListH3">212</h3>
               </div>
-            </div>
-          </li>
-          <li className="sec1Item">
-            <img src="/public/images/img3.png" alt="" />
-            <div className="ItemListText">
-              <div className="ListText1">
-                <h2>Showing Now</h2>
-                <h3>Monster Truck</h3>
-              </div>
-              <div className="ListText1">
-                <h2>Up Next</h2>
-                <h3>Emilly Watson</h3>
-              </div>
-            </div>
-            <div className="ItemListAll">
-              <div className="ItemListLink">
-                <p>
-                  Enjoy the best of action packed movies from NBC
-                  international...
-                </p>
-                <button className="WatchNowBtn">Watch Now</button>
-              </div>
-              <div className="ItemList">
-                <div className="ItemListDiv1">
-                  <img src="/public/images/nbc.svg" alt="" />
+              <div className="ItemListAll">
+                <div className="ItemListLink">
+                  <p>{item.FilmText}</p>
+                  <button className="WatchNowBtn">Watch Now</button>
                 </div>
-                <h3 className="ItemListH3">212</h3>
-              </div>
-            </div>
-          </li>
-          <li className="sec1Item">
-            <img src="/public/images/img4.png" alt="" />
-            <div className="ItemListText">
-              <div className="ListText1">
-                <h2>Showing Now</h2>
-                <h3>Monster Truck</h3>
-              </div>
-              <div className="ListText1">
-                <h2>Up Next</h2>
-                <h3>Emilly Watson</h3>
-              </div>
-            </div>
-            <div className="ItemListAll">
-              <div className="ItemListLink">
-                <p>
-                  Enjoy the best of action packed movies from NBC
-                  international...
-                </p>
-                <button className="WatchNowBtn">Watch Now</button>
-              </div>
-              <div className="ItemList">
-                <div className="ItemListDiv1">
-                  <img src="/public/images/espa.svg" alt="" />
+                <div className="ItemList">
+                  <div className="ItemListDiv1">
+                    <img src={item.imgSvg} alt="" />
+                  </div>
+                  <h3 className="ItemListH3">222</h3>
                 </div>
-                <h3 className="ItemListH3">212</h3>
               </div>
-            </div>
-          </li>
-          <li className="sec1Item">
-            <img src="/public/images/img5.png" alt="" />
-            <div className="ItemListText">
-              <div className="ListText1">
-                <h2>Showing Now</h2>
-                <h3>Monster Truck</h3>
-              </div>
-              <div className="ListText1">
-                <h2>Up Next</h2>
-                <h3>Emilly Watson</h3>
-              </div>
-            </div>
-            <div className="ItemListAll">
-              <div className="ItemListLink">
-                <p>
-                  Enjoy the best of action packed movies from NBC
-                  international...
-                </p>
-                <button className="WatchNowBtn">Watch Now</button>
-              </div>
-              <div className="ItemList">
-                <div className="ItemListDiv1">
-                  <img src="/public/images/usa.svg" alt="" />
-                </div>
-                <h3 className="ItemListH3">212</h3>
-              </div>
-            </div>
-          </li>
-          <li className="sec1Item">
-            <img src="/public/images/img6.png" alt="" />
-            <div className="ItemListText">
-              <div className="ListText1">
-                <h2>Showing Now</h2>
-                <h3>Monster Truck</h3>
-              </div>
-              <div className="ListText1">
-                <h2>Up Next</h2>
-                <h3>Emilly Watson</h3>
-              </div>
-            </div>
-            <div className="ItemListAll">
-              <div className="ItemListLink">
-                <p>
-                  Enjoy the best of action packed movies from NBC
-                  international...
-                </p>
-                <button className="WatchNowBtn">Watch Now</button>
-              </div>
-              <div className="ItemList">
-                <div className="ItemListDiv1">
-                  <img src="/public/images/trueTv.svg" alt="" />
-                </div>
-                <h3 className="ItemListH3">212</h3>
-              </div>
-            </div>
-          </li>
+            </li>
+          ))}
         </ul>
         <button className="btnAddBanner">Add Banner</button>
       </div>
@@ -195,4 +51,4 @@ function section1() {
   );
 }
 
-export default section1;
+export default Section1;
