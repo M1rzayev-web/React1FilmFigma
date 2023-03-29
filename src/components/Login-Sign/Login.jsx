@@ -1,33 +1,33 @@
 import React, { useState } from "react";
 import "../css/login.css";
 function Login() {
-// const [loggedIn, setLoggedIn] = useState(false);
+const [loggedIn, setLoggedIn] = useState(false);
 
-// useEffect(() => {
-//   const storedUsername = localStorage.getItem("username");
-//   const storedPassword = localStorage.getItem("password");
+useEffect(() => {
+  const storedUsername = localStorage.getItem("username");
+  const storedPassword = localStorage.getItem("password");
 
-//   if (storedUsername && storedPassword) {
-//     setLoggedIn(true);
-//   }
-// }, []);
+  if (storedUsername && storedPassword) {
+    setLoggedIn(true);
+  }
+}, []);
 
-// const handleLogin = (username, password) => {
-//   const storedUsername = localStorage.getItem("username");
-//   const storedPassword = localStorage.getItem("password");
+const handleLogin = (username, password) => {
+  const storedUsername = localStorage.getItem("username");
+  const storedPassword = localStorage.getItem("password");
 
-//   if (username === storedUsername && password === storedPassword) {
-//     setLoggedIn(true);
-//   } else {
-//     alert("Invalid username or password.");
-//   }
-// };
+  if (username === storedUsername && password === storedPassword) {
+    setLoggedIn(true);
+  } else {
+    alert("Invalid username or password.");
+  }
+};
 
-// const handleLogout = () => {
-//   localStorage.removeItem("username");
-//   localStorage.removeItem("password");
-//   setLoggedIn(false);
-// };
+const handleLogout = () => {
+  localStorage.removeItem("username");
+  localStorage.removeItem("password");
+  setLoggedIn(false);
+};
 
   return (
     <>
