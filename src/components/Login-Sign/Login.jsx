@@ -1,33 +1,26 @@
 import React, { useState } from "react";
+import App from "../../App";
 import "../css/login.css";
+
 function Login() {
-const [loggedIn, setLoggedIn] = useState(false);
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
+  const [newUsername, setNewUsername] = useState("");
+  const [newPassword, setNewPassword] = useState("");
 
-useEffect(() => {
-  const storedUsername = localStorage.getItem("username");
-  const storedPassword = localStorage.getItem("password");
+  const handleLogin = (event) => {
+    event.preventDefault();
+    if (username === localStorage.getItem("username") &&
+      password === localStorage.getItem("password")) {
+      return <App />;
+    }
+  };
 
-  if (storedUsername && storedPassword) {
-    setLoggedIn(true);
-  }
-}, []);
-
-const handleLogin = (username, password) => {
-  const storedUsername = localStorage.getItem("username");
-  const storedPassword = localStorage.getItem("password");
-
-  if (username === storedUsername && password === storedPassword) {
-    setLoggedIn(true);
-  } else {
-    alert("Invalid username or password.");
-  }
-};
-
-const handleLogout = () => {
-  localStorage.removeItem("username");
-  localStorage.removeItem("password");
-  setLoggedIn(false);
-};
+  const handleSignup = (event) => {
+    event.preventDefault();
+    localStorage.setItem("username", newUsername);
+    localStorage.setItem("password", newPassword);
+  };
 
   return (
     <>
@@ -38,40 +31,11 @@ const handleLogout = () => {
             <label htmlFor="username">Username</label>
             <input
               type="text"
-              value={username}
-              onChange={(e) => setUsername(e.target.value)}
-              placeholder="Username"
-              required
-            />
-          </div>
-          <div className="form-control">
-            <label htmlFor="password">Password</label>
-            <input
-              type="password"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-              placeholder="Password"
-              required
-            />
-          </div>
-          <button type="submit">Login</button>
-          <div className="signup-link">
-            <button type="button" id="signup-link" onClick={handleSignUp}>
-              Sign Up
-            </button>
-          </div>
-        </form>
-      </div>
-      <div className="sign-container">
-        <form id="sign-form" className="sign-form" onSubmit={handleSignin}>
-          <h2>Signin</h2>
-          <div className="form-control">
-            <label htmlFor="username">Username</label>
-            <input
-              type="text"
               id="username"
               placeholder="Enter your username"
               required
+              value={username}
+              onChange={(e) => setUsername(e.target.value)}
             />
           </div>
           <div className="form-control">
@@ -81,13 +45,48 @@ const handleLogout = () => {
               id="password"
               placeholder="Enter your password"
               required
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
             />
           </div>
-          <button type="submit">Signin</button>
+          <button type="submit">Login</button>
+          <div className="signup-link">
+            <a href="#" id="signup-link">
+              Sign up
+            </a>
+          </div>
+        </form>
+
+        <form id="signup-form" className="signup-form" onSubmit={handleSignup}>
+          <h2>Sign up</h2>
+          <div className="form-control">
+            <label htmlFor="new-username">Username</label>
+            <input
+              type="text"
+              id="new-username"
+              onChange={(e) => setNewUsername(e.target.value)}
+              placeholder="Enter your username"
+              required
+            />
+          </div>
+          <div className="form-control">
+            <label htmlFor="new-password">Password</label>
+            <input
+              type="password"
+              id="new-password"
+              onChange={(e) => setNewPassword(e.target.value)}
+              placeholder="Enter your password"
+              required
+            />
+          </div>
+          <button type="submit">Sign up</button>
+          <div className="login-link">
+            <a href="#" id="login-link">
+              Login
+            </a>
+          </div>
         </form>
       </div>
     </>
   );
 }
-
-export default Login;
